@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+  </head>
+  <body>
+    <!-- Start Form Section -->
+    <form action="about.html" target="_blank" method="get">
+      <h1>Fill This Form</h1>
+      <label for="userInput">Name:</label>
+      <input
+        type="text"
+        name="user"
+        id="userInput"
+        placeholder="Enter Your Name"
+      />
+      <br />
+      <hr />
+      <br />
+      <label for="emailInput">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="emailInput"
+        placeholder="example@xyz.com"
+      />
+      <br />
+      <hr />
+      <br />
+      <label for="passwordInput">Password:</label>
+      <input type="password" name="password" id="passwordInput" />
+      <br />
+      <hr />
+      <br />
+      <label>Gender</label>
+      <input type="radio" name="gender" id="maleRadio" value="man" required />
+      <label for="maleRadio">Male</label>
+
+      <input type="radio" name="gender" id="femaleRadio" value="woman" />
+      <label for="femaleRadio">Female</label>
+      <br />
+      <hr />
+      <br />
+      <label>Favorite Sports</label>
+      <input
+        type="checkbox"
+        name="sports"
+        id="football"
+        value="footbal"
+        checked
+      />
+      <label for="football">Football</label>
+
+      <input type="checkbox" name="sports" id="basketball" value="footbal" />
+      <label for="basketball">Basketball</label>
+
+      <input type="checkbox" name="sports" id="tennis" value="tennis" />
+      <label for="tennis">Tennis</label>
+
+      <input type="checkbox" name="sports" id="volleyBall" value="volleyBall" />
+      <label for="volleyBall">VolleyBall</label>
+
+      <input type="checkbox" name="sports" id="handBall" value="handBall" />
+      <label for="handBall">HandBall</label>
+      <br />
+      <hr />
+      <br />
+      <label>Bithday</label>
+      <input type="date" name="date" />
+      <input type="month" name="month" />
+      <input type="week" name="week" />
+      <input type="datetime-local" name="local" />
+      <br />
+      <hr />
+      <br />
+      <label>Choose File</label>
+      <input type="file" multiple />
+      <br />
+      <hr />
+      <br />
+      <label>Quantity</label>
+      <input type="number" min="1" max="20" step="1" />
+      <br />
+      <hr />
+      <br />
+      <label>Price</label>
+      <input type="range" min="0" max="100" step="10" />
+      <br />
+      <hr />
+      <br />
+      <input type="submit" value="Send" />
+    </form>
+    <!-- End Form Section -->
+  </body>
+</html>

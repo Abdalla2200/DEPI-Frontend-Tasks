@@ -1,0 +1,30 @@
+/* Start Carousel Section */
+
+.carousel-text {
+  top: 40%;
+}
+
+.carousel-text h5 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.carousel-text p {
+  font-size: 20px;
+}
+
+.custom-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+/* End Carousel Section */
+
+/* Start Footer Section */
+
+.social-icons {
+  font-size: 26px;
+}
+
+/* End Footer Section */

@@ -1,0 +1,10 @@
+.head {
+  height: 500px;
+
+  background-color: blue;
+  background-image: url("../img/pexels-janobarnard-6224289.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+}

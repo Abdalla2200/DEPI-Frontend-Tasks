@@ -1,0 +1,152 @@
+/* Global Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #212121;
+  overflow-x: hidden;
+}
+
+/* Start First Animation section */
+
+.first-animation {
+  width: 50%;
+  height: 510px;
+  margin: 50px auto;
+}
+
+.first-animation img {
+  width: 300px;
+  height: 300px;
+  animation: move 5s linear infinite normal backwards;
+}
+
+.first-animation img:hover {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translate(0px);
+  }
+
+  25% {
+    transform: translateX(400px) scale(0.5);
+    border-radius: 50%;
+  }
+
+  50% {
+    transform: translate(400px, 250px) scale(0.5);
+    border-radius: 50%;
+  }
+
+  75% {
+    transform: translateY(250px);
+  }
+}
+
+/* End First Animation section */
+
+/* Start Second Animation section */
+
+.second-animation {
+  width: 50%;
+  height: 510px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+}
+
+.second-animation span {
+  width: 8px;
+  height: 300px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.second-animation h2 {
+  flex: 1;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  width: fit-content;
+  height: 300px;
+  animation: ping-pong 7s linear infinite;
+}
+
+.second-animation h2:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ping-pong {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translateX(67%);
+  }
+
+  50% {
+    transform: translate(0, 250px);
+  }
+
+  75% {
+    transform: translate(67%, 250px);
+  }
+}
+
+/* End Second Animation section */
+
+/* Start Third Animation section */
+
+.third-animation {
+  width: 50%;
+  height: 510px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-animation .parent-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 5px solid rgb(155, 249, 39);
+  border-right: transparent;
+  border-top: transparent;
+  animation: parent-spinner 2s linear infinite;
+}
+
+.third-animation .child-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid rgb(59, 209, 243);
+  border-left: transparent;
+  border-bottom: transparent;
+  animation: child-spinner 1s linear infinite;
+}
+
+@keyframes parent-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes child-spinner {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* End Third Animation section */

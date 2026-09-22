@@ -1,0 +1,214 @@
+/* Start header home section */
+
+.header-home {
+  height: 640px;
+  background-image: url(../img/download.jpg);
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.header-home .header-content {
+  background-color: #56a08a;
+  padding: 40px;
+  border-radius: 18px;
+  margin-top: 100px;
+}
+
+.header-home .header-content h2 {
+  color: white;
+  font-size: 44px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .header-home {
+    background-position: right;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-home .header-content {
+    padding: 20px;
+    width: 90%;
+    margin: 100px auto;
+  }
+
+  .header-home .header-content h2 {
+    font-size: 36px;
+  }
+}
+
+/* End header home section */
+
+/* Start school section */
+
+.school-home {
+  margin-bottom: 50px;
+}
+
+.school-home h2 {
+  color: #164d4c;
+  margin-bottom: 20px;
+  font-family: cursive;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.school-home hr {
+  height: 6px;
+  border: none;
+  width: 220px;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #e98317;
+  transition: all 0.3s ease-out;
+}
+
+.school-home img {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .school-home img {
+    width: 100%;
+  }
+}
+
+.school-home div {
+  font-family: cursive;
+}
+
+.school-home h3 {
+  color: #57a0a5;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.school-home p {
+  font-size: 18px;
+  color: #484a4c;
+  line-height: 1.5;
+}
+
+/* End school section */
+
+/* Start services section */
+
+.services-home {
+  min-height: 750px;
+  background-image:
+    url(../img/Path\ 62.png), url(../img/i-love-my-job-so-much_329181-2178.png);
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.services-home h2 {
+  color: white;
+  font-size: 31px;
+  font-weight: 600;
+  margin-bottom: 80px;
+  font-family: cursive;
+}
+
+.services-home .services-card {
+  height: 420px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.services-home img {
+  height: 200px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.services-home h3 {
+  color: #57a0a5;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: serif;
+  margin-bottom: 10px;
+}
+
+.services-home p {
+  color: #919090;
+  font-weight: 600;
+  font-family: serif;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* End services section */
+
+/* Start about home section */
+
+@media (max-width: 575px) {
+  .about-home img {
+    width: 50% !important;
+  }
+}
+
+/* End about home section */
+
+/* Start footer section */
+
+.footer-home {
+  background-color: #0f7b65;
+  border-radius: 150px 150px 0 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .footer-home {
+    border-radius: 50px 50px 0 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-home {
+    border-radius: 0px;
+  }
+}
+
+.footer-home h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.footer-home p {
+  color: white;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.footer-home h4 {
+  color: #f48e76;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.footer-home span {
+  display: block;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .footer-home {
+    text-align: center;
+  }
+}
+
+/* End footer section */

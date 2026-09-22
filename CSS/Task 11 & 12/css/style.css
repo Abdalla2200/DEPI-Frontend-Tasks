@@ -1,0 +1,306 @@
+/* Global Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  perspective: 600px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start nav home section */
+
+.nav-home {
+  width: 65%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.nav-home img {
+  width: 140px;
+}
+
+.nav-home a {
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  margin-right: 40px;
+  font-size: 21px;
+}
+
+.nav-home img,
+.nav-home a {
+  transition: all 0.2s linear;
+}
+
+.nav-home img:hover {
+  transform: scale(1.04);
+}
+
+.nav-home a:hover {
+  transform: scale(1.08);
+}
+
+.nav-home .logout-link {
+  color: white;
+  background-color: #ed7c6a;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* End nav home section */
+
+/* Start header home section */
+
+.header-home {
+  height: 610px;
+  background-image: url(../img/download.jpg);
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.header-home .header-content {
+  background-color: #56a08a;
+  padding: 40px;
+  border-radius: 16px;
+  width: 380px;
+  height: 320px;
+  position: relative;
+  left: 200px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-home .header-content:hover {
+  transform: translateY(-15px);
+}
+
+.header-home .header-content h2 {
+  color: white;
+  font-size: 44px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+/* End header home section */
+
+/* Start about section */
+
+.about-home {
+  margin-bottom: 50px;
+}
+
+.about-home h2 {
+  color: #164d4c;
+  margin-bottom: 20px;
+  font-family: cursive;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.about-home hr {
+  height: 6px;
+  border: none;
+  width: 220px;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #e98317;
+  transition: all 0.3s ease-out;
+}
+
+.about-home hr:hover {
+  transform: scaleX(1.4);
+}
+
+.about-home .about-content {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-home .about-content img {
+  width: 45%;
+  transition: all 0.3s linear;
+}
+
+.about-home .about-content img:hover {
+  transform: scale(1.05);
+}
+
+.about-home .about-content div {
+  width: 45%;
+  font-family: cursive;
+}
+
+.about-home .about-content h3 {
+  color: #57a0a5;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.about-home .about-content p {
+  font-size: 18px;
+  color: #484a4c;
+  line-height: 1.5;
+}
+
+/* End about section */
+
+/* Start services section */
+
+.services-home {
+  height: 740px;
+  background-image:
+    url(../img/Path\ 62.png), url(../img/i-love-my-job-so-much_329181-2178.png);
+  background-size: cover;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-home h2 {
+  color: white;
+  font-size: 31px;
+  font-weight: 600;
+  margin-bottom: 80px;
+  font-family: cursive;
+  text-align: center;
+}
+
+.services-home .services-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.services-home .services-card {
+  width: 19%;
+  height: 380px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.services-home .services-card:hover {
+  transform: translateY(-25px);
+}
+
+.services-home .services-content img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.services-home .services-content h3 {
+  color: #57a0a5;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.services-home .services-content p {
+  color: #919090;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* End services section */
+
+/* Start doctors section */
+
+.doctors-home {
+  width: 80%;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doctors-home img {
+  width: 18%;
+  transition: all 0.2s linear;
+}
+
+.doctors-home img:hover {
+  transform: scale(1.08);
+}
+
+/* End doctors section */
+
+/* Start footer section */
+
+.footer-home {
+  background-color: #0f7b65;
+  border-radius: 200px 200px 0 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer-content {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer-content div:nth-of-type(1) {
+  width: 47%;
+  margin-top: 20px;
+}
+
+.footer-content div {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: white;
+  text-align: center;
+}
+
+.footer-content p {
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.footer-content h4 {
+  color: #f48e76;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.footer-content span {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* End footer section */

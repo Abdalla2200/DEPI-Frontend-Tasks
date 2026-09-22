@@ -1,0 +1,80 @@
+/* Global Styles */
+
+* {
+  font-family: cursive;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start Header Section  */
+
+.header-home {
+  width: 100%;
+  height: 615px;
+  background-image: url("../img/66.jpg");
+  background-size: cover;
+  background-position: top center;
+  margin-bottom: 30px;
+}
+
+/* Start Navbar Links Section */
+
+.nav-home a {
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+/* End Navbar Links Section */
+
+.header-content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.header-content h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.header-content a {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #6258a8;
+  color: white;
+  margin-right: 20px;
+  padding: 6px 14px;
+  border-radius: 16px;
+}
+
+/* End Header Section  */
+
+/* Start Enjoy Home Section */
+
+.enjoy-home {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.enjoy-home h2 {
+  margin-bottom: 20px;
+}
+
+.enjoy-home p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.enjoy-home img {
+  width: 300px;
+  margin-right: 20px;
+}
+
+/* End Enjoy Home Section */

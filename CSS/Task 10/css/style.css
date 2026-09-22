@@ -1,0 +1,219 @@
+/* Global styles */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start nav home section */
+
+.nav-home {
+  display: flex;
+  background-color: #212121;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+.nav-home a {
+  color: white;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+/* End nav home section */
+
+/* Start header home section */
+
+.header-home {
+  height: 540px;
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header-home h2 {
+  font-size: 38px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.header-home p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.header-home a {
+  margin-right: 20px;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background-color: #6f0f41;
+  color: white;
+  font-size: 18px;
+}
+
+.header-home a:nth-of-type(2) {
+  background-color: #2c9279;
+}
+
+/* End header home section */
+
+/* Start children section */
+
+.children-home h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.children-home hr {
+  width: 250px;
+  margin: auto;
+  margin-bottom: 50px;
+  height: 3px;
+  border: none;
+  background-color: #e72e2e;
+}
+
+.children-home .children-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.children-home .children-content img {
+  width: 35%;
+  margin-bottom: 50px;
+}
+
+.children-home .children-content p {
+  width: 40%;
+  font-family: serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* End children section */
+
+/* Start about content */
+
+.about-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.about-home .about-content {
+  width: 35%;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.166);
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.about-home img {
+  width: 100%;
+  height: 400px;
+}
+
+.about-home p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* End about content */
+
+/* 
+=========================================================
+=========================================================
+Start contactus section and footer section 
+=========================================================
+=========================================================
+*/
+
+.contactus-home {
+  height: 460px;
+  background-image: url(../img/contact\ us.gif);
+  padding-top: 50px;
+}
+
+.contactus-home h2,
+.footer-home h2 {
+  color: white;
+  font-size: 34px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contactus-home form,
+.footer-home form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactus-home input,
+.contactus-home textarea,
+.footer-home input {
+  width: 80%;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.contactus-home button,
+.footer-home button {
+  background-color: #212121;
+  padding: 10px 26px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* 
+=========================================================
+=========================================================
+End contactus section and footer section 
+=========================================================
+=========================================================
+*/
+
+/* Start footer section */
+
+.footer-home {
+  height: 240px;
+  background-image: url(../img/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+  background-size: cover;
+  padding-top: 100px;
+}
+
+/* End footer section */
