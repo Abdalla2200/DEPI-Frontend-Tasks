@@ -1,0 +1,18 @@
+/* Start Header Home */
+
+.header-home {
+  background-image: url(../img/download.jpg);
+  background-size: cover;
+}
+
+/* End Header Home */
+
+/* Start Services Section */
+
+.services-home {
+  background-image:
+    url(../img/Path\ 62.png), url(../img/i-love-my-job-so-much_329181-2178.png);
+  background-size: cover;
+}
+
+/* End Services Section */
