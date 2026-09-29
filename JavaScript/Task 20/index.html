@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Style File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Task 20</title>
+  </head>
+  <body>
+    <h1 id="headText">This text is from HTML file</h1>
+
+    <button onclick="document.getElementById('date').innerHTML = Date()">
+      Show current date
+    </button>
+    <p id="date"></p>
+
+    <button onclick="document.getElementById('lamp').src = 'img/lamp-on.png'">
+      Turn On
+    </button>
+    <img id="lamp" src="img/lamp-off.png" />
+    <button onclick="document.getElementById('lamp').src = 'img/lamp-off.png'">
+      Turn Off
+    </button>
+
+    <!-- JS file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
