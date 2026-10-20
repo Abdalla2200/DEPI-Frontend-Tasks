@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CSS File -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Swiper CSS CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Tailwind JS File -->
+    <script src="js/tailwind.min.js"></script>
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Task 25</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Start social navbar -->
+
+    <nav class="bg-[#D15B62]">
+      <div
+        class="flex flex-row gap-4 px-4 py-3 items-center justify-between w-full sm:w-[94%] mx-auto"
+      >
+        <div class="flex items-center gap-1">
+          <span
+            class="bg-white w-6 h-6 rounded-full flex items-center justify-center"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </span>
+          <span
+            class="bg-white w-6 h-6 rounded-full flex items-center justify-center"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </span>
+          <span
+            class="bg-white w-6 h-6 rounded-full flex items-center justify-center"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </span>
+          <span
+            class="bg-white w-6 h-6 rounded-full flex items-center justify-center"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </span>
+          <span
+            class="bg-white w-6 h-6 rounded-full flex items-center justify-center"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+        </div>
+
+        <div
+          class="text-white text-center text-sm lg:text-base hidden sm:block"
+        >
+          <i
+            class="fa-solid fa-location-dot"
+            style="color: rgb(255, 255, 255)"
+          ></i>
+          <span class="mr-">2464 Royal Ln Mesa, New Jersey 45463 </span>
+          <i class="fa-solid fa-envelope" style="color: rgb(255, 255, 255)"></i>
+          <span>unreal@outlook.com</span>
+        </div>
+        <select class="text-white outline-none">
+          <option class="text-black">English</option>
+          <option class="text-black">Arabic</option>
+        </select>
+      </div>
+    </nav>
+
+    <!-- End social navbar -->
+
+    <!-- Start main navbar -->
+
+    <nav class="relative border-b border-gray-200">
+      <div
+        class="flex gap-4 items-center justify-between py-3 px-4 w-full sm:w-[94%] mx-auto"
+      >
+        <div class="flex justify-between items-center gap-8">
+          <a href="index.html">
+            <img src="img/Henna Logo-02 2.png" class="h-10 -ml-4" />
+          </a>
+
+          <ul class="hidden lg:flex items-center">
+            <li>
+              <a href="#" class="py-2 px-3 text-black font-bold">Home</a>
+            </li>
+            <li>
+              <a href="#" class="py-2 px-3 text-gray-500 font-bold"
+                >Wedding services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="py-2 px-3 text-gray-500 font-bold"
+                >Providers</a
+              >
+            </li>
+            <li>
+              <a href="#" class="py-2 px-3 text-gray-500 font-bold">About</a>
+            </li>
+            <li>
+              <a href="#" class="py-2 px-3 text-gray-500 font-bold">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-3">
+          <div class="relative w-66">
+            <input
+              type="text"
+              class="w-full ps-9 pe-3 py-2.5 bg-[#E7F5ED] border-none text-heading text-sm rounded-full px-2.5 py-2 shadow-xs placeholder:text-gray-400 outline-none"
+              placeholder="Search"
+            />
+            <img
+              src="img/Icon-search.png"
+              class="absolute w-5 top-2.5 left-2.5"
+            />
+          </div>
+          <button
+            class="bg-[#D15B62] hover:bg-[#D15B62]/80 rounded-sm text-white font-medium py-2 px-4 cursor-pointer"
+          >
+            Download App
+          </button>
+        </div>
+        <div
+          class="block lg:hidden cursor-pointer"
+          onclick="handleMobileMenu()"
+        >
+          <img src="img/Icon-navbar.png" class="w-full" />
+        </div>
+        <div
+          class="hidden bg-[#D15B62] w-[100%] sm:w-[40%] absolute top-[100%] right-0 rounded-xl p-5"
+          id="mobileNav"
+        >
+          <ul class="flex flex-col items-center gap-5">
+            <li>
+              <a href="#" class="py-2 px-3 text-white font-bold">Home</a>
+            </li>
+            <li>
+              <a href="#" class="py-2 px-3 text-white font-bold"
+                >Wedding services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="py-2 px-3 text-white font-bold">Providers</a>
+            </li>
+            <li>
+              <a href="#" class="py-2 px-3 text-white font-bold">About</a>
+            </li>
+            <li>
+              <a href="#" class="py-2 px-3 text-white font-bold">Contact</a>
+            </li>
+          </ul>
+          <div class="relative my-5">
+            <input
+              type="text"
+              class="w-full ps-9 pe-3 py-2.5 bg-[#E7F5ED] border-none text-heading text-sm rounded-full px-2.5 py-2 shadow-xs placeholder:text-gray-400 outline-none"
+              placeholder="Search"
+            />
+            <img
+              src="img/Icon-search.png"
+              class="absolute w-5 top-2.5 left-2.5"
+            />
+          </div>
+          <button
+            class="hover:bg-white/10 border border-white rounded-lg text-white font-medium py-2 px-4 cursor-pointer w-full"
+          >
+            Download App
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End main navbar -->
+
+    <!-- Start register navbar -->
+
+    <nav
+      class="flex items-center justify-between gap-4 py-3 px-4 sm:w-[94%] mx-auto"
+    >
+      <a href="#" class="text-gray-500 md:text-xl">Home</a>
+      <div>
+        <button
+          class="bg-[#D15B62] hover:bg-[#D15B62]/80 py-1 md:py-2 px-2 md:px-4 rounded-sm mr-2 text-white font-bold cursor-pointer"
+        >
+          Create Account
+        </button>
+        <button
+          class="text-[#D15B62] bg-[#D15B62]/10 hover:bg-[#D15B62]/20 py-2 px-4 rounded-sm font-bold cursor-pointer"
+        >
+          Login
+        </button>
+      </div>
+    </nav>
+
+    <!-- End register navbar -->
+
+    <!-- Start home header section -->
+
+    <header
+      class="mb-16 bg-[linear-gradient(rgba(209,91,98,0.3),rgba(209,91,98,0.3)),url('img/back-header-back.png')] bg-cover bg-bottom h-[600px] flex items-center"
+    >
+      <div class="px-4 w-full sm:w-[94%] mx-auto flex flex-col justify-center">
+        <h2 class="text-white text-5xl font-bold">WELCOME</h2>
+        <p class="text-white/60 text-xl mt-3 mb-5 w-[500px]">
+          maxime recusandae nobismaxime recusandae nobismaxime recusandae
+          nobismaxime recusandae nobis
+        </p>
+        <button
+          class="bg-[#D15B62] hover:bg-[#D15B62]/80 py-3 px-6 rounded-sm w-fit text-white font-bold cursor-pointer"
+        >
+          Get Started
+        </button>
+      </div>
+    </header>
+
+    <!-- End home header section -->
+
+    <!-- Start main home section -->
+
+    <main class="px-4 w-full sm:w-[94%] mx-auto mb-14">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide overflow-hidden h-[220px]! rounded-2xl relative"
+          >
+            <img src="img/img-cate.png" class="w-full h-full object-cover" />
+            <span
+              class="absolute left-0 bottom-0 w-[95%] bg-[#806053]/70 text-white font-bold py-3 px-4 rounded-2xl opacit"
+              >photography
+            </span>
+          </div>
+          <div
+            class="swiper-slide overflow-hidden h-[220px]! rounded-2xl relative"
+          >
+            <img src="img/img-cate-1.png" class="w-full h-full object-cover" />
+            <span
+              class="absolute left-0 bottom-0 w-[95%] bg-[#806053]/70 text-white font-bold py-3 px-4 rounded-2xl"
+              >photography
+            </span>
+          </div>
+          <div
+            class="swiper-slide overflow-hidden h-[220px]! rounded-2xl relative"
+          >
+            <img src="img/img-cate-2.png" class="w-full h-full object-cover" />
+            <span
+              class="absolute left-0 bottom-0 w-[95%] bg-[#806053]/70 text-white font-bold py-3 px-4 rounded-2xl"
+              >photography
+            </span>
+          </div>
+          <div
+            class="swiper-slide overflow-hidden h-[220px]! rounded-2xl relative"
+          >
+            <img src="img/img-cate-3.png" class="w-full h-full object-cover" />
+            <span
+              class="absolute left-0 bottom-0 w-[95%] bg-[#806053]/70 text-white font-bold py-3 px-4 rounded-2xl"
+              >photography
+            </span>
+          </div>
+          <div
+            class="swiper-slide overflow-hidden h-[220px]! rounded-2xl relative"
+          >
+            <img src="img/img-cate-4.png" class="w-full h-full object-cover" />
+            <span
+              class="absolute left-0 bottom-0 w-[95%] bg-[#806053]/70 text-white font-bold py-3 px-4 rounded-2xl"
+              >photography
+            </span>
+          </div>
+          <div
+            class="swiper-slide overflow-hidden h-[220px]! rounded-2xl relative"
+          >
+            <img src="img/img-cate-5.png" class="w-full h-full object-cover" />
+            <span
+              class="absolute left-0 bottom-0 w-[95%] bg-[#806053]/70 text-white font-bold py-3 px-4 rounded-2xl"
+              >photography
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- End main home section -->
+
+    <!-- Start Providers Home Section -->
+
+    <section class="px-4 w-full sm:w-[94%] mx-auto mb-14">
+      <h2 class="text-2xl mb-6 font-semibold">Our Providers</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide relative">
+            <img
+              src="img/LOGO PROVIDER-1.png"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+              >Hala Makup Artist
+            </span>
+          </div>
+          <div class="swiper-slide relative">
+            <img
+              src="img/LOGO PROVIDER-2.png"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+              >Hala Makup Artist
+            </span>
+          </div>
+          <div class="swiper-slide relative">
+            <img
+              src="img/LOGO PROVIDER-3.png"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+              >Hala Makup Artist
+            </span>
+          </div>
+          <div class="swiper-slide relative">
+            <img
+              src="img/LOGO PROVIDER-4.png"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+              >Hala Makup Artist
+            </span>
+          </div>
+          <div class="swiper-slide relative">
+            <img
+              src="img/LOGO PROVIDER-5.png"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+              >Hala Makup Artist
+            </span>
+          </div>
+          <div class="swiper-slide relative">
+            <img
+              src="img/LOGO PROVIDER-1.png"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+              >Hala Makup Artist
+            </span>
+          </div>
+          <div class="swiper-slide relative">
+            <img
+              src="img/LOGO PROVIDER-2.png"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+              >Hala Makup Artist
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Providers Home Section -->
+
+    <!-- Start Services Section -->
+
+    <section class="px-4 w-full sm:w-[94%] mx-auto mb-16 pb-16">
+      <h2 class="text-2xl mb-6 font-semibold">Our Services</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide rounded-xl overflow-hidden border border-gray-200"
+          >
+            <div class="h-[170px] w-full mb-3">
+              <img src="img/service-1.png" />
+            </div>
+            <div class="px-5">
+              <h3 class="font-semibold text-lg">photographer</h3>
+              <p class="text-gray-500">category name</p>
+              <div class="flex items-center gap-1 mb-6">
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <span class="text-cyan-600">(121)</span>
+              </div>
+            </div>
+            <button
+              class="block w-[90%] mx-auto text-center border border-gray-500 rounded-md text-gray-500 py-1 mb-6"
+            >
+              View
+            </button>
+          </div>
+          <div
+            class="swiper-slide rounded-xl overflow-hidden border border-gray-200"
+          >
+            <div class="h-[170px] w-full mb-3">
+              <img src="img/service-2.png" />
+            </div>
+            <div class="px-5">
+              <h3 class="font-semibold text-lg">photographer</h3>
+              <p class="text-gray-500">category name</p>
+              <div class="flex items-center gap-1 mb-6">
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <span class="text-cyan-600">(121)</span>
+              </div>
+            </div>
+            <button
+              class="block w-[90%] mx-auto text-center border border-gray-500 rounded-md text-gray-500 py-1 mb-6"
+            >
+              View
+            </button>
+          </div>
+          <div
+            class="swiper-slide rounded-xl overflow-hidden border border-gray-200"
+          >
+            <div class="h-[170px] w-full mb-3">
+              <img src="img/service-3.png" />
+            </div>
+            <div class="px-5">
+              <h3 class="font-semibold text-lg">photographer</h3>
+              <p class="text-gray-500">category name</p>
+              <div class="flex items-center gap-1 mb-6">
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <span class="text-cyan-600">(121)</span>
+              </div>
+            </div>
+            <button
+              class="block w-[90%] mx-auto text-center border border-gray-500 rounded-md text-gray-500 py-1 mb-6"
+            >
+              View
+            </button>
+          </div>
+          <div
+            class="swiper-slide rounded-xl overflow-hidden border border-gray-200"
+          >
+            <div class="h-[170px] w-full mb-3">
+              <img src="img/service-4.png" />
+            </div>
+            <div class="px-5">
+              <h3 class="font-semibold text-lg">photographer</h3>
+              <p class="text-gray-500">category name</p>
+              <div class="flex items-center gap-1 mb-6">
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <span class="text-cyan-600">(121)</span>
+              </div>
+            </div>
+            <button
+              class="block w-[90%] mx-auto text-center border border-gray-500 rounded-md text-gray-500 py-1 mb-6"
+            >
+              View
+            </button>
+          </div>
+          <div
+            class="swiper-slide rounded-xl overflow-hidden border border-gray-200"
+          >
+            <div class="h-[170px] w-full mb-3">
+              <img src="img/service-1.png" />
+            </div>
+            <div class="px-5">
+              <h3 class="font-semibold text-lg">photographer</h3>
+              <p class="text-gray-500">category name</p>
+              <div class="flex items-center gap-1 mb-6">
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <span class="text-cyan-600">(121)</span>
+              </div>
+            </div>
+            <button
+              class="block w-[90%] mx-auto text-center border border-gray-500 rounded-md text-gray-500 py-1 mb-6"
+            >
+              View
+            </button>
+          </div>
+          <div
+            class="swiper-slide rounded-xl overflow-hidden border border-gray-200"
+          >
+            <div class="h-[170px] w-full mb-3">
+              <img src="img/service-2.png" />
+            </div>
+            <div class="px-5">
+              <h3 class="font-semibold text-lg">photographer</h3>
+              <p class="text-gray-500">category name</p>
+              <div class="flex items-center gap-1 mb-6">
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <span class="text-cyan-600">(121)</span>
+              </div>
+            </div>
+            <button
+              class="block w-[90%] mx-auto text-center border border-gray-500 rounded-md text-gray-500 py-1 mb-6"
+            >
+              View
+            </button>
+          </div>
+          <div
+            class="swiper-slide rounded-xl overflow-hidden border border-gray-200"
+          >
+            <div class="h-[170px] w-full mb-3">
+              <img src="img/service-3.png" />
+            </div>
+            <div class="px-5">
+              <h3 class="font-semibold text-lg">photographer</h3>
+              <p class="text-gray-500">category name</p>
+              <div class="flex items-center gap-1 mb-6">
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <i
+                  class="fa-regular fa-star text-xl"
+                  style="color: rgb(255, 212, 59)"
+                ></i>
+                <span class="text-cyan-600">(121)</span>
+              </div>
+            </div>
+            <button
+              class="block w-[90%] mx-auto text-center border border-gray-500 rounded-md text-gray-500 py-1 mb-6"
+            >
+              View
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Services Section -->
+
+    <!-- Start Join Us Home Section -->
+
+    <section
+      class="px-4 w-full sm:w-[94%] mx-auto mb-14 grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-16 items-center mb-16 pb-16"
+    >
+      <div class="md:max-w-[350px] text-center md:text-start">
+        <h2 class="mb-3 font-semibold text-3xl text-gray-800 leading-[1.4]">
+          Join<br />To Our Providers
+        </h2>
+        <p class="text-gray-700 mb-4 font-medium leading-[1.6]">
+          Numquam ut sed autem molestias quo voluptate voluptas. Esse eius
+          dolorum velit molestiae quas voluptas. A aut animi iusto quam. Itaque
+          accusantium nobis nobis doloremque eligendi.
+        </p>
+        <button
+          class="py-3 px-16 block bg-[#D15B62] hover:bg-[#D15B62]/80 cursor-pointer text-white rounded-md text-lg w-full md:w-fit mx-auto md:m-0 block"
+        >
+          Join
+        </button>
+      </div>
+      <div class="md:col-span-2 grid grid-cols-2 lg:grid-cols-3 gap-7">
+        <div class="relative rounded-xl overflow-hidden h-[220px]">
+          <img
+            src="img/LOGO PROVIDER-1.png"
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+            >Hala Makup Artist
+          </span>
+        </div>
+        <div class="relative rounded-xl overflow-hidden h-[220px]">
+          <img
+            src="img/LOGO PROVIDER-2.png"
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+            >Hala Makup Artist
+          </span>
+        </div>
+        <div class="relative rounded-xl overflow-hidden h-[220px]">
+          <img
+            src="img/LOGO PROVIDER-3.png"
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+            >Hala Makup Artist
+          </span>
+        </div>
+        <div class="relative rounded-xl overflow-hidden h-[220px]">
+          <img
+            src="img/LOGO PROVIDER-4.png"
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+            >Hala Makup Artist
+          </span>
+        </div>
+        <div class="relative rounded-xl overflow-hidden h-[220px]">
+          <img
+            src="img/LOGO PROVIDER-5.png"
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+            >Hala Makup Artist
+          </span>
+        </div>
+        <div class="relative rounded-xl overflow-hidden h-[220px]">
+          <img
+            src="img/LOGO PROVIDER-1.png"
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="text-center absolute left-1 bottom-2 w-[96%] bg-[#C7E4DB] font-bold py-1 px-4 rounded-md opacit"
+            >Hala Makup Artist
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Join Us Home Section -->
+
+    <!-- Start Newsletter Home Section -->
+
+    <section class="px-4 w-full sm:w-[94%] mx-auto mb-10 text-center">
+      <h2 class="text-3xl mb-2 font-semibold tracking-[1px]">Newsletter</h2>
+      <p class="text-gray-500 mb-3 max-w-[550px] mx-auto">
+        Be the first one to know about discounts, offers and events weekly in
+        your mailbox. Unsubscribe whenever you like with one click.
+      </p>
+      <form action="index.html" class="flex items-center justify-center gap-3">
+        <div class="relative w-[380px]">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your E-Mail"
+            class="w-full outline-none border-none bg-[#E6F6EC] rounded-sm p-2 pl-10 placeholder:text-gray-500"
+          />
+          <i class="fa-regular fa-envelope text-xl absolute top-2.5 left-2"></i>
+        </div>
+        <button
+          class="bg-[#D15B62] py-2 px-4 rounded-md text-white cursor-pointer hover:bg-[#D15B62]/80"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <!-- End Newsletter Home Section -->
+
+    <!-- Start Download App Home Section -->
+
+    <section
+      class="px-4 w-full sm:w-[94%] mx-auto mb-10 pb-10 flex justify-center items-center"
+    >
+      <div
+        class="flex flex-col justify-center w-[800px] h-[360px] mx-auto rounded-xl overflow-hidden p-7 bg-[linear-gradient(rgba(67,103,109,0.6),rgba(67,103,109,0.6)),url('img/Rectangle-19.png')] bg-cover"
+      >
+        <h2 class="text-3xl text-white font-semibold mb-3">
+          Download<br />
+          Henna Mobile App
+        </h2>
+        <p class="text-white/80 mb-4 max-w-[350px]">
+          Numquam ut sed autem molestias quo voluptate voluptas. Esse eius
+          dolorum velit molestiae quas voluptas.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center gap-3">
+          <div class="relative">
+            <button
+              class="cursor-pointer border border-white rounded-sm py-2 pr-6 pl-9 text-white font-semibold hover:bg-white/10"
+            >
+              Download Ios
+            </button>
+            <i
+              class="fa-solid fa-arrow-down absolute top-3 left-3"
+              style="color: rgb(255, 255, 255)"
+            ></i>
+          </div>
+          <div class="relative">
+            <button
+              class="cursor-pointer rounded-sm py-2 pr-6 pl-9 text-[#D15B62] bg-[#FFDAC5] hover:bg-[#FFDAC5]/90 font-semibold"
+            >
+              Download Android
+            </button>
+            <i
+              class="fa-solid fa-arrow-down absolute top-3 left-3"
+              style="color: rgb(209, 91, 98)"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Download App Home Section -->
+
+    <!-- Start About Home Section -->
+
+    <section class="px-4 w-full sm:w-[94%] mx-auto mb-16 pb-16">
+      <h2 class="text-2xl mb-6 font-semibold">About Henna</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div
+          class="p-6 rounded-xl bg-[url('img/Rectangle-41.png')] bg-cover h-[220px]"
+        >
+          <h2 class="text-4xl font-semibold text-white mb-3">Objectives</h2>
+          <p class="text-white/80 text-lg max-w-[250px]">
+            lorem asdaslorem asdaslorem asdaslorem asdaslorem asdaslorem asdas
+          </p>
+        </div>
+        <div
+          class="p-6 rounded-xl bg-[url('img/Rectangle-34.png')] bg-cover h-[220px]"
+        >
+          <h2 class="text-4xl font-semibold text-white mb-3">Visions</h2>
+          <p class="text-white text-lg max-w-[250px]">
+            lorem asdaslorem asdaslorem asdaslorem asdaslorem asdaslorem asdas
+          </p>
+        </div>
+        <div
+          class="p-6 rounded-xl bg-[url('img/Rectangle-41.png')] bg-cover h-[220px]"
+        >
+          <h2 class="text-4xl font-semibold text-white mb-3">Missions</h2>
+          <p class="text-white/80 text-lg max-w-[250px]">
+            lorem asdaslorem asdaslorem asdaslorem asdaslorem asdaslorem asdas
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- End About Home Section -->
+
+    <!-- Start Footer Section -->
+
+    <footer class="px-4 w-full sm:w-[94%] mx-auto">
+      <img
+        src="img/Henna Logo-02 2.png"
+        class="mb-2 w-fit block mx-auto lg:mx-0"
+      />
+      <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-5 mb-5">
+        <div class="sm:col-span-3 text-center lg:text-start">
+          <p class="text-gray-500 mb-5 max-w-[430px] mx-auto lg:mx-0">
+            We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat
+          </p>
+          <div class="flex items-center gap-3 justify-center lg:justify-start">
+            <i
+              class="fa-regular fa-envelope text-2xl"
+              style="color: rgb(209, 91, 98)"
+            ></i>
+            <div class="text-start">
+              <p class="text-gray-500">Contact Us</p>
+              <p class="text-[#D15B62]">evedesign@example.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1.5 items-center lg:items-start">
+          <h3 class="font-bold text-xl mb-1">Useful Links</h3>
+          <span class="text-gray-500">Categoreis</span>
+          <span class="text-gray-500">Services</span>
+          <span class="text-gray-500">Posts</span>
+          <span class="text-gray-500">Policy</span>
+          <span class="text-gray-500">Payment Methods</span>
+        </div>
+        <div class="flex flex-col gap-1.5 items-center lg:items-start">
+          <h3 class="font-bold text-xl mb-1">Services</h3>
+          <span class="text-gray-500">Weeding Services</span>
+          <span class="text-gray-500">others</span>
+          <span class="text-gray-500">others</span>
+          <span class="text-gray-500">others</span>
+          <span class="text-gray-500">others</span>
+        </div>
+        <div class="flex flex-col gap-1.5 items-center lg:items-start">
+          <h3 class="font-bold text-xl mb-1">Social Media</h3>
+          <span class="text-gray-500">Facebook</span>
+          <span class="text-gray-500">Instagram</span>
+          <span class="text-gray-500">Whatapp</span>
+          <span class="text-gray-500">Telegram</span>
+          <span class="text-gray-500">Others</span>
+        </div>
+      </div>
+      <p class="py-5 text-center text-gray-600">
+        &copy; 2021 All Rights Reserved
+      </p>
+    </footer>
+
+    <!-- End Footer Section -->
+
+    <!-- Font Awesome js File-->
+    <script src="js/all.min.js"></script>
+    <!-- Swiper JS CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- My JS File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
