@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind JS File -->
+    <script src="js/tailwind.min.js"></script>
+    <title>Task 28 | Todo List</title>
+  </head>
+  <body class="min-h-[1000px]">
+    <!-- Start Navbar Section -->
+
+    <nav
+      class="flex fixed w-full top-0 justify-between items-center gap-4 bg-blue-400 py-3 px-4 sm:px-12"
+    >
+      <a href="#" class="text-3xl font-semibold text-white tracking-[-2px]"
+        >DEPI</a
+      >
+      <div class="flex gap-4 sm:gap-8">
+        <a href="#" class="sm:text-lg text-white">Home</a>
+        <a href="#" class="sm:text-lg text-white">About</a>
+        <a href="#" class="sm:text-lg text-white">Contact</a>
+        <a href="#" class="sm:text-lg text-white">Pricing</a>
+      </div>
+    </nav>
+
+    <!-- End Navbar Section -->
+
+    <!-- Start Todo List App -->
+
+    <div class="container pt-10 w-full lg:w-[55%] px-4 mx-auto">
+      <h2 class="text-center mt-20 text-4xl font-semibold mb-10">
+        Todo List App
+      </h2>
+
+      <form id="todoForm" class="w-full mb-6">
+        <input
+          type="text"
+          id="todoInput"
+          placeholder="Enter Your Task"
+          class="w-full mb-6 p-2 text-lg outline-blue-400 border border-gray-200 rounded-md"
+        />
+        <button
+          type="submit"
+          class="w-full py-3 px-6 font-semibold text-white bg-blue-400 hover:bg-blue-500 cursor-pointer rounded-md"
+        >
+          Add Task
+        </button>
+      </form>
+      <ul id="todoResults" class="w-full flex flex-col gap-6 text-lg"></ul>
+    </div>
+
+    <!-- End Todo List App -->
+
+    <!-- Start Timer Section -->
+
+    <div class="my-20 py-20 text-center">
+      <p id="timer" class="text-5xl font-semibold mb-8">0</p>
+      <button
+        id="start"
+        class="bg-blue-400 rounded-md py-2 px-3 text-white font-semibold cursor-pointer hover:bg-blue-500"
+      >
+        Start
+      </button>
+
+      <button
+        id="stop"
+        class="bg-blue-400 rounded-md py-2 px-3 text-white font-semibold cursor-pointer hover:bg-blue-500 mx-6"
+      >
+        Stop
+      </button>
+      <button
+        id="reset"
+        class="bg-blue-400 rounded-md py-2 px-3 text-white font-semibold cursor-pointer hover:bg-blue-500"
+      >
+        Reset
+      </button>
+    </div>
+
+    <!-- End Timer Section -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
