@@ -47,9 +47,9 @@ window.addEventListener("scroll", function () {
   const navbar = document.querySelector("nav");
 
   if (scrollValue > 250) {
-    navbar.classList.add("bg-green-400");
+    navbar.classList.add("bg-gray-600");
   } else {
-    navbar.classList.remove("bg-green-400");
+    navbar.classList.remove("bg-gray-600");
   }
 });
 
